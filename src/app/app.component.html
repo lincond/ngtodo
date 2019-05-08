@@ -2,6 +2,6 @@
 <button (click)="createTask()">Salvar</button>
 <ul>
   <li *ngFor="let t of todo">
-    {{ t.detail }} - Criado em {{ t.created_at }}
+    {{ t.detail }} - Criado em {{ t.created_at | date: 'HH:mm' }}
   </li>
 </ul>

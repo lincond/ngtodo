@@ -19,7 +19,8 @@ export class AppComponent {
     task.detail = this.task
     task.created_at = new Date()
     task.finished = false
-    
+
     this.todo.push(task)
+    this.task = ''
   }
 }
