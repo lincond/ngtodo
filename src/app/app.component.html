@@ -1,7 +1,6 @@
 <input [(ngModel)]="task" type="text">
 <button (click)="createTask()">Salvar</button>
-<ul>
-  <li *ngFor="let t of todo">
-    {{ t.detail }} - Criado em {{ t.created_at | date: 'HH:mm' }}
-  </li>
-</ul>
+<h1>Hoje</h1>
+<app-todo-list [todo]="todo"></app-todo-list>
+<h1>Amanhã</h1>
+<app-todo-list [todo]="todo"></app-todo-list>
